@@ -58,3 +58,121 @@ boton6.addEventListener('click', () =>{
     mensaje.textContent += ' - '+ i;
 }
 });
+
+//ejercicio 7 Escribe un programa que lea una calificación numérica entre 0 y 10 y la transforma en
+//calificación alfabética, escribiendo el resultado.
+const boton7 = document.getElementById('boton7');
+boton7.addEventListener('click', () =>{
+    const num = prompt('Introduce el numero');
+    if (num < 3) {	
+        mensaje.textContent ='Muy deficiente';
+    }else if (num < 5)
+    {
+        mensaje.textContent ='Insuficiente';
+    }else if (num < 6)
+    {
+        mensaje.textContent ='Bien';
+    }else if (num < 9)
+    {
+        mensaje.textContent ='Notable';
+    }else if(num >=9 && num <= 10)
+    {
+        mensaje.textContent ='Sobresaliente';
+    }
+});
+
+//ejercicio 8 Realiza un programa que lea un número positivo N y calcule y visualice su factorial N!
+//Siendo el factorial:
+const boton8 = document.getElementById('boton8');
+boton8.addEventListener('click', () =>{
+   const num = prompt('Introduce el numero');
+   let factorial = 1;
+   for (let i = 1; i <=num; i++){
+    factorial *= i;
+    mensaje.textContent = 'El factorial es: ' + factorial;
+}
+});
+
+//ejercicio 9 Escribe un programa que recibe como datos de entrada una hora expresada en horas,
+//minutos y segundos que nos calcula y escribe la hora, minutos y segundos que serán,
+//transcurrido un segundo.
+const boton9 = document.getElementById('boton9');
+boton9.addEventListener('click', () =>{
+   let hora = prompt('Introduce la hora');
+   let minuto = prompt('Introduce el minuto');
+   let segundo = prompt('Introduce el segundo');
+   segundo ++;
+   if (segundo >= 60) {
+    segundo = 0;
+    minuto++;
+    
+    }
+    if (minuto >= 60) {
+    minuto = 0;
+    hora++;
+    
+    }
+    if (hora >= 24) {
+    hora = 0;
+    }
+    mensaje.textContent = 'La hora seria: ' + hora + ' : ' + minuto + ' : ' + segundo;
+});
+
+//ejercicio 10 Realiza un programa que lea 10 números no nulos y luego muestre un mensaje de si ha
+//leído algún número negativo o no.
+const boton10 = document.getElementById('boton10');
+boton10.addEventListener('click', () =>{
+   let cont = 0;
+   let bucle = 0;
+
+   do{
+    let num = prompt('Introduce un numero (hasta 10)' + bucle);
+    bucle++;
+    if(num < 0){
+        cont++;
+    }
+    }while(bucle <= 10);
+   
+    if(cont>0){
+        mensaje.textContent = "Ha leido un numero negativo";
+    }
+    else{
+        mensaje.textContent = "No ha leido un numero negativo";
+    }
+    bucle = 0;
+
+});
+
+//ejercicio 11
+const boton11 = document.getElementById('boton11');
+boton11.addEventListener('click', () =>{
+    let contpos = 0;
+    let conneg = 0;
+   for (let i = 1; i <=10; i++){
+    const num = prompt('Introduce un numero(hasta 10)' +i);  
+    if(num>0){
+        contneg++;
+    }
+    else{
+        contpos++;
+    }
+    }
+    if(cont>0){
+        mensaje.textContent = "Ha leido " +conneg + " numeros negativos";
+    }
+    else{
+        mensaje.textContent = "Ha leido " +contpos + " numeros negativos";
+    }
+});
+
+//ejercicio 12
+const boton12 = document.getElementById('boton12');
+boton12.addEventListener('click', () =>{
+    let posi = 0;
+    let nega = 0;
+    let cont = 0;
+    while(cont <=0 ){
+    const num = prompt('Introduce el numero');
+    cont += num;
+    }
+});

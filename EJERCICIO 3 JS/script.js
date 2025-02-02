@@ -165,14 +165,61 @@ boton11.addEventListener('click', () =>{
     }
 });
 
-//ejercicio 12
+//ejercicio 12 Realiza un programa que lea una secuencia de números no nulos hasta que se introduzca
+//un 0, y luego muestre si ha leído algún número negativo, cuantos positivos y cuantos
+//negativos.
 const boton12 = document.getElementById('boton12');
 boton12.addEventListener('click', () =>{
-    let posi = 0;
-    let nega = 0;
-    let cont = 0;
-    while(cont <=0 ){
-    const num = prompt('Introduce el numero');
-    cont += num;
+    let numero = 0;
+    let contadorPosi = 0, contadorNega = 0;
+    do {
+        numero = parseInt(prompt('Introduzca un número cualquiera, 0 para salir'));
+        if(numero > 0){
+            contadorPosi++;
+        }else if(numero < 0){
+            contadorNega++;
+        }
+    }while(numero !== 0);
+    mensaje.textContent = 'Ahora le vamos a indicar cuantos números han sido positivos y cuantos negativos';
+    mensaje.textContent = 'Numeros positivos: ' + contadorPosi + " / Numeros Negativos: " + contadorNega;
+});
+
+//ejercicio 13 Realiza un programa que calcule y escriba la suma y el producto de los 10 primeros
+//números naturales.
+const boton13 = document.getElementById('boton13');
+boton13.addEventListener('click', () =>{
+    let suma = 0;
+    let producto = 1;
+    for (let i = 1; i <= 10; i++) {
+        suma += i;
     }
+    for (let i = 1; i <= 10; i++) {
+        producto *= i;
+    }
+    mensaje.textContent = 'Suma: ' + suma + ' Producto: ' + producto;
+});
+
+//ejercicio 14
+const boton14 = document.getElementById('boton14');
+boton14.addEventListener('click', () =>{
+    let nombreTrabajador = prompt('Indique el nombre del trabajador');
+    let horasTrabajadas = parseInt(prompt('Indique las horas que ha trabajado este mes'));
+    let precioPorHora = parseInt(prompt('Indique el precio por hora del trabajador'));
+
+    let sueldoBruto = 0;
+    if(horasTrabajadas <= 35){
+        sueldoBruto = horasTrabajadas * precioPorHora;
+    }else{
+        sueldoBruto = (35 * precioPorHora) + ((horasTrabajadas - 35) * (precioPorHora * 1.5));
+    }
+    let tasas = 0;
+    if(sueldoBruto > 500 && sueldoBruto <= 900){
+        tasas = (sueldoBruto - 500) * 0.25;
+    }if(sueldoBruto > 900){
+        tasas = ((sueldoBruto - 500) * 0.25) + ((sueldoBruto - 900) * 0.45);
+    }
+    mensaje.textContent = 'Vamos a calcular los datos de ' + nombreTrabajador + ' con un precio por hora de ' + precioPorHora +
+     ' y ' + horasTrabajadas + ' horas trabajadas';
+
+    mensaje.textContent = 'El salario bruto es de ' + sueldoBruto + ', las tasas son ' + tasas + ', y el sueldo neto es de ' + (sueldoBruto - tasas);
 });

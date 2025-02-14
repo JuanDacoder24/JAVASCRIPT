@@ -20,23 +20,20 @@ function renderTasks(){
 }
 
 function deleteTask(index) {
+    
     miArray.splice(index, 1); 
     localStorage.setItem('miArray', JSON.stringify(miArray));  
     renderTasks();  
     showMessage('Tarea eliminada correctamente', 'success'); 
 }
-function completeTask(){ //he creado una funcion para el boton de tarea completada
+
+function completeTask(index){ //he creado una funcion para el boton de tarea completada
     task.splice(index, 1);
     localStorage.setItem('miArray', JSON.stringify(miArray));
     renderTasks();
-    showMessage('Tarea completada');
+    mensaje.textContent = ('Tarea completada');
 }
-function showMessage(message, type) {
-    messages.innerHTML = `<div class="${type}">${message}</div>`;
-    setTimeout(() => {
-        messages.innerHTML = '';  
-    }, 3000);
-}
+
 taskForm.addEventListener('submit', function(event) {
     event.preventDefault();  
     const newTask = taskInput.value.trim();  

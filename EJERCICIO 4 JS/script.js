@@ -13,25 +13,24 @@ function renderTasks(){
           const li = document.createElement('li');
           li.innerHTML = `
               <span>${task}</span>
-              <button class="delete-button" onclick="deleteTask(${index})">Eliminar</button>
-              <button class="complete-button" onclick="completeTask(${index})">Completado</button>`; //boton de tarea completada
+              <button class="delete-button" onclick="deleteTask(${index})">Eliminar ❌</button>
+              <button class="complete-button" onclick="completeTask(${index})">Completado ✔</button>`; //boton de tarea completada
           taskList.appendChild(li);
       });
 }
 
 function deleteTask(index) {
-    
-    miArray.splice(index, 1); 
-    localStorage.setItem('miArray', JSON.stringify(miArray));  
-    renderTasks();  
-    showMessage('Tarea eliminada correctamente', 'success'); 
-}
-
-function completeTask(index){ //he creado una funcion para el boton de tarea completada
-    task.splice(index, 1);
+    tasks.splice(index, 1);
     localStorage.setItem('miArray', JSON.stringify(miArray));
     renderTasks();
-    mensaje.textContent = ('Tarea completada');
+    showMessage('Tarea eliminada correctamente', 'success');
+}
+
+function completeTask(index) {
+    tasks[index].completed = !tasks[index].completed;
+    localStorage.setItem('miArray', JSON.stringify(miArray));
+    renderTasks();
+    showMessage('Tarea completada', 'success');
 }
 
 taskForm.addEventListener('submit', function(event) {

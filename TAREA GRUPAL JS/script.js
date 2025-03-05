@@ -39,7 +39,7 @@ function bienvenida(){
     //Modifico los estilos del contenedor del mensaje
     mensaje.style.width = '75%';
     mensaje.style.heigth = '300px';
-    mensaje.style.backgroundImage = 'linear-gradient(-90deg, darkred 45%, lightcoral)';
+    mensaje.style.backgroundImage = 'linear-gradient(-20deg, darkred 10%, lightcoral)';
     mensaje.style.margin = 'auto';
     mensaje.style.position = 'absolute';
     mensaje.style.top = '50%';
@@ -302,7 +302,7 @@ function restablecerElemento(event){
 }
 
 //Sección para el timer de un elemento
-let fechaLimite = new Date(2025,3,5,14,0,0);
+let fechaLimite = new Date(2025,2,7,15,0,0);
 
 
 

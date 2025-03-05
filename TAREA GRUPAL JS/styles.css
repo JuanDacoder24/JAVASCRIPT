@@ -183,6 +183,9 @@ nav a:hover {
   border-radius: 10px;
 }
 
+h1 {
+color: red;
+}
 #cuenta_regresiva{
   text-align: center;
   color:red;
@@ -192,6 +195,13 @@ nav a:hover {
 }
 
 @media (max-width: 700px) {
+  html{
+    font-size: max(10px);
+  }
+  .parrafo_modificar{
+    font-size: max(15px);
+    color: red;
+  }
   header {
     flex-direction: column;
   }
@@ -222,8 +232,10 @@ nav a:hover {
   border-radius: 5px;
   cursor: pointer;
 }
+
 .botones_agregar:active{
   transform: scale(0.9);
+
 }
 .pie_de_pagina {  
   display: grid;
@@ -232,6 +244,7 @@ nav a:hover {
   gap: 0px 0px;
   grid-auto-flow: row;
 }
+
 .pie_de_pagina .contactos {  
   display: flex;
   justify-content: center;
@@ -242,6 +255,7 @@ nav a:hover {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
+
 }
 
 .reserva { 
@@ -255,7 +269,6 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
   margin-top: -10px;
-  
 }
 
 .contactos { 
@@ -269,7 +282,7 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
   margin-top: -600px;
-
+  margin-left: 50%;
 }
 
 .container {
@@ -278,15 +291,18 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
 }
+
 h2 {
   text-align: center;
   color: #ff5722;
 }
+
 label {
   font-weight: bold;
   display: block;
   margin-top: 10px;
 }
+
 input, select, textarea {
   width: 100%;
   padding: 8px;
@@ -294,6 +310,7 @@ input, select, textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 button {
   width: 100%;
   padding: 10px;
@@ -305,6 +322,7 @@ button {
   cursor: pointer;
   font-size: 16px;
 }
+
 button:hover {
   background: #e64a19;
 }

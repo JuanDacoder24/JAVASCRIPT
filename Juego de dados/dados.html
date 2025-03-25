@@ -4,13 +4,35 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ejemplo Google Fonts</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <header>
         <h1>Juego de Dados</h1>
     </header>
+    <div class="game-container">
+        
+        <div class="dice-container">
+            <div id="dice1" class="dice">🎲</div>
+            <div id="dice2" class="dice">🎲</div>
+        </div>
+        
+        <div class="score-board">
+            <div class="score">
+                <h3>Jugador</h3>
+                <p id="playerScore">0</p>
+            </div>
+            <div class="score">
+                <h3>Máquina</h3>
+                <p id="computerScore">0</p>
+            </div>
+        </div>
+        
+        <button id="rollButton" onclick="playRound()">Tirar Dados</button>
+        
+        <div id="gameResult"></div>
+    </div>
     <div class="pie_de_pagina">
         <div class="a">1</div>
         <div class="b">2</div>

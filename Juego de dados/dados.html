@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ejemplo Google Fonts</title>
+<title>Juego de Dados</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,50 +11,107 @@
     <header>
         <h1>Juego de Dados</h1>
     </header>
-    <div class="game-container">
-        
-        <div class="dice-container">
-            <div id="dice1" class="dice">🎲</div>
-            <div id="dice2" class="dice">🎲</div>
-        </div>
-        
-        <div class="score-board">
-            <div class="score">
-                <h3>Jugador</h3>
-                <p id="playerScore">0</p>
-            </div>
-            <div class="score">
-                <h3>Máquina</h3>
-                <p id="computerScore">0</p>
-            </div>
-        </div>
-        
-        <button id="rollButton" onclick="playRound()">Tirar Dados</button>
-        
-        <div id="gameResult"></div>
+    <div class="reglas">
+        <h1>Reglas del juego</h1>
+        <h3>Objetivo</h3>
+        <p>Ser el primer jugador en llegar el casillero 20</p>
+        <h3>Como jugar</h3>
+        <p>Si el dado muestra un 1, el jugador pierde todos los puntos acumulados en este turno y su turno termina inmediatamente.</p>
+        <p>Si el dado muestra entre 2 y 6 el jugador sigue avanzando</p>
+        <h3>Fin de la partida</h3>
+        <p>El primer jugador en alcanzar o superar la puntuación objetivo gana la partida.</p>
+        <button id="botonIniciar" onclick="Iniciar()">Iniciar</button>
     </div>
-    <div class="pie_de_pagina">
-        <div class="a">1</div>
-        <div class="b">2</div>
-        <div class="c">3</div>
-        <div class="d">4</div>
-        <div class="e">5</div>
-        <div class="f">6</div>
-        <div class="g">7</div>
-        <div class="h">8</div>
-        <div class="i">9</div>
-        <div class="j">10</div>
-        <div class="k">11</div>
-        <div class="l">12</div>
-        <div class="m">13</div>
-        <div class="n">14</div>
-        <div class="o">15</div>
-        <div class="p">16</div>
-        <div class="q">17</div>
-        <div class="r">18</div>
-        <div class="s">19</div>
-        <div class="t">20</div>
+    <div class="cuerpo">
+        <div class="resultados"><div class="game-container">
+        
+            <div class="dice-container">
+                <div id="dice1" class="dice"></div>
+                <div id="dice2" class="dice"></div>
+            </div>
+            
+            <div class="score-board">
+                <div class="score">
+                    <h3>Jugador 1</h3>
+                    <p id="playerScore">0</p>
+                </div>
+                <div class="score">
+                    <h3>Jugador 2</h3>
+                    <p id="computerScore">0</p>
+                </div>
+            </div>
+            
+            <button id="rollButton" onclick="playRound()">Tirar Dados</button>
+            
+            <div id="gameResult"></div>
+        </div></div>
+        <div class="tablero">
+            <div class="pie_de_pagina">
+                <div class="a">
+                    <p>1</p>
+                </div>
+                <div class="b">
+                    <p>2</p>
+                </div>
+                <div class="c">
+                    <p>3</p>
+                </div>
+                <div class="d">
+                    <p>4</p>
+                </div>
+                <div class="e">
+                    <p>5</p>
+                </div>
+                <div class="f">
+                    <p>6</p>
+                </div>
+                <div class="g">
+                    <p>7</p>
+                </div>
+                <div class="h">
+                    <p>8</p>
+                </div>
+                <div class="i">
+                    <p>9</p>
+                </div>
+                <div class="j">
+                    <p>10</p>
+                </div>
+                <div class="k">
+                    <p>11</p>
+                </div>
+                <div class="l">
+                    <p>12</p>
+                </div>
+                <div class="m">
+                    <p>13</p>
+                </div>
+                <div class="n">
+                    <p>14</p>
+                </div>
+                <div class="o">
+                    <p>15</p>
+                </div>
+                <div class="p">
+                    <p>16</p>
+                </div>
+                <div class="q">
+                    <p>17</p>
+                </div>
+                <div class="r">
+                    <p>18</p>
+                </div>
+                <div class="s">
+                    <p>19</p>
+                </div>
+                <div class="t">
+                    <p>20</p>
+                </div>
+              </div>
+        </div>
       </div>
+    
+    
     <script src="script.js"></script>
 </body>
 </html>

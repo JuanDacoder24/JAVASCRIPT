@@ -1,3 +1,44 @@
+.cuerpo {  display: grid;
+  grid-template-columns: 0.8fr 1.4fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "resultados tablero";
+}
+.reglas{
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  height: 420px;
+  width: 700px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.resultados { 
+  grid-area: resultados; 
+  margin-left: 10%;
+  margin-top: 10%;
+}
+#botonIniciar{
+  background: linear-gradient(to right, #ff6b6b, #feca57);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.tablero { 
+  grid-area: tablero; 
+  margin-top: -10%;
+}
+
 body{
   font-family: 'Orbitron', sans-serif;
   margin: 0;
@@ -27,7 +68,7 @@ body{
 }
 .dice {
   font-size: 100px;
-  margin: 0 10px;
+  margin: 10px;
   transition: transform 0.3s ease;
 }
 .dice.rolling {
@@ -64,7 +105,7 @@ header{
   justify-content: center;
   font-family:cursive;
   font-size: 24px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -74,260 +115,243 @@ header{
   100% { background-position: 0% 50%; }
 }
   .pie_de_pagina {  
-    display: grid;
+    display:grid;
     padding: 10%;
     margin-left: 10%;
     margin-right: 10%;  
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
+    gap: 0px 30px;
     grid-auto-flow: row;
     justify-content: center;
-    justify-items: center;
-    text-align: center;
-    font-size: 30px;
+    font-size: 40px;
   }
-  
   .a { 
     background-color: rgb(98, 184, 125);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 80%;
 }
   
   .b { 
     background-color: rgb(83, 128, 97);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 80%;
 }
   
   .c { 
     background-color: rgb(76, 167, 154);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 80%;
 }
   
   .d { 
     background-color: rgb(28, 119, 152);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 80%;
 }
   
   .e { 
     background-color: rgb(37, 106, 59);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 80%;
 
 }
   
   .f { 
     background-color: rgb(124, 132, 51);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 20%;
 }
   
   .g { 
     background-color: rgb(152, 186, 94);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 20%;
 }
   
   .h { 
     background-color: rgb(193, 121, 69);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 20%;
 }
   
   .i { 
     background-color: rgb(105, 98, 184);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 20%;
 
 }
   
   .j { 
     background-color: rgb(157, 39, 187);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 20%;
 }
   
   .k { 
     background-color: rgb(214, 122, 16);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: -40%;
 }
   
   .l { 
     background-color: rgb(184, 98, 98);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: -40%;
 }
   
   .m { 
     background-color: rgb(214, 10, 10);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: -40%;
 }
   
   .n { 
     background-color: rgb(94, 53, 121);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: -40%;
 }
   
   .o { 
     background-color: rgb(21, 103, 110);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: -40%;
 }
   
   .p { 
     background-color: rgb(24, 79, 41);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: -100%;
 }
   
   .q { 
     background-color: rgb(85, 96, 88);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: -100%;
 }
   
   .r { 
     background-color: rgb(125, 170, 42);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: -100%;
 }
   
   .s { 
     background-color: rgb(249, 183, 3);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: -100%;
 }
   
   .t { 
     background-color: rgb(39, 124, 148);
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     font-family: fantasy;
     color: aliceblue;
     border-radius: 40px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: -100%;
 }
   
   

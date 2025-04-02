@@ -11,7 +11,7 @@
     <header>
         <h1>Juego de Dados</h1>
     </header>
-    <div class="reglas">
+    <div id="reglas">
         <h1>Reglas del juego</h1>
         <h3>Objetivo</h3>
         <p>Ser el primer jugador en llegar el casillero 20</p>
@@ -20,17 +20,17 @@
         <p>Si el dado muestra entre 2 y 6 el jugador sigue avanzando</p>
         <h3>Fin de la partida</h3>
         <p>El primer jugador en alcanzar o superar la puntuación objetivo gana la partida.</p>
-        <button id="botonIniciar" onclick="Iniciar()">Iniciar</button>
+        <button id="botonIniciar" class="boton">Iniciar</button>
     </div>
-    <div class="cuerpo">
-        <div class="resultados"><div class="game-container">
+    <div id="cuerpo">
+        <div id="resultados"><div id="game-container">
         
             <div class="dice-container">
                 <div id="dice1" class="dice"></div>
                 <div id="dice2" class="dice"></div>
             </div>
             
-            <div class="score-board">
+            <div id="score-board">
                 <div class="score">
                     <h3>Jugador 1</h3>
                     <p id="playerScore">0</p>
@@ -45,7 +45,7 @@
             
             <div id="gameResult"></div>
         </div></div>
-        <div class="tablero">
+        <div id="tablero">
             <div class="pie_de_pagina">
                 <div class="a">
                     <p>1</p>

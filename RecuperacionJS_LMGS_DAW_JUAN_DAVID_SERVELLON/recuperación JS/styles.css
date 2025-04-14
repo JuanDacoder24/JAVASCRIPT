@@ -1,0 +1,234 @@
+/* Fuente personalizada */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: #000;
+}
+
+/* Vídeo */
+
+#video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    object-fit: cover;
+}
+
+
+#overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+/* Contenido */
+.contenido {
+    position: relative;
+    z-index: 1;
+    padding: 2em;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#btn-idioma {
+    padding: 0.6em 1.2em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff7f50, #ffda00);
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#btn-idioma:hover {
+    transform: scale(1.05);
+}
+
+/* Sidebar */
+#sidebar-favoritos {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 270px;
+    height: 100%;
+    background-color: rgba(255,255,255,0.95);
+    color: #000;
+    padding: 1.5em;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+    overflow-y: auto;
+    z-index: 2;
+    border-left: 5px solid #ff7f50;
+}
+
+#sidebar-favoritos h2 {
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+#lista-favoritos {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Eventos */
+main {
+    max-width: 1000px;
+    margin-right: 300px;
+}
+
+.evento {
+    display: flex;
+    background-color: rgba(255,255,255,0.9);
+    color: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.evento:hover {
+    transform: translateY(-4px);
+}
+
+.imagen-evento {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.info-evento {
+    padding: 1em 1.5em;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-evento {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.descripcion-evento {
+    font-size: 1rem;
+    margin-bottom: 0.8em;
+}
+
+.precio-evento {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.botones-evento {
+    margin-top: 1em;
+}
+
+.btn-favorito, .btn-comprar {
+    padding: 0.6em 1em;
+    margin-right: 0.5em;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-favorito {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-comprar {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-favorito:hover {
+    background-color: #0056b3;
+}
+
+.btn-comprar:hover {
+    background-color: #1e7e34;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.imagen-evento {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+/*Estilos para la ventana modal*/
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+.modal-content input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+}

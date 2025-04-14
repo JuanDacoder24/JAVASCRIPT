@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Eventos Culturales</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+<video autoplay muted loop id="video-fondo">
+    <source src="assets/fondo.mp4" type="video/mp4">
+</video>
+
+<div id="overlay"></div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h2>Iniciar Sesión</h2>
+        <form id="formulario">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required />
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required />
+            <button type="submit">Acceder</button>
+        </form>
+        <p id="mensajeError" style="color: red; display: none;">Credenciales incorrectas. Inténtalo de nuevo.</p>
+    </div>
+</div>
+<div class="contenido">
+
+    <header>
+        <h1 id="titulo">Eventos Culturales Locales</h1>
+        <button id="btn-idioma">Cambiar a inglés</button>
+    </header>
+
+    <aside id="sidebar-favoritos">
+        <h2>Favoritos</h2>
+        <ul id="lista-favoritos">
+            <!-- Eventos añadidos -->
+        </ul>
+    </aside>
+
+    <main>
+        <section class="evento">
+            <img src="assets/evento1.jpg" alt="Imagen del evento 1" class="imagen-evento" />
+            <div class="info-evento">
+                <h3 class="titulo-evento">Festival de Música Indie</h3>
+                <p class="descripcion-evento">Una jornada con bandas emergentes del panorama nacional.</p>
+                <p class="precio-evento">Precio: 18 €</p>
+                <div class="botones-evento">
+                    <button class="btn-favorito">Añadir a favoritos</button>
+                    <button class="btn-comprar">Comprar entrada</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="evento">
+            <img src="assets/evento2.jpg" alt="Imagen del evento 2" class="imagen-evento" />
+            <div class="info-evento">
+                <h3 class="titulo-evento">Taller de Fotografía Urbana</h3>
+                <p class="descripcion-evento">Recorre la ciudad con cámara en mano y mejora tu técnica.</p>
+                <p class="precio-evento">Precio: 22 €</p>
+                <div class="botones-evento">
+                    <button class="btn-favorito">Añadir a favoritos</button>
+                    <button class="btn-comprar">Comprar entrada</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="evento">
+            <img src="assets/evento3.jpg" alt="Imagen del evento 3" class="imagen-evento" />
+            <div class="info-evento">
+                <h3 class="titulo-evento">Obra de Teatro Clásico</h3>
+                <p class="descripcion-evento">Una puesta en escena renovada de "La vida es sueño".</p>
+                <p class="precio-evento">Precio: 14 €</p>
+                <div class="botones-evento">
+                    <button class="btn-favorito">Añadir a favoritos</button>
+                    <button class="btn-comprar">Comprar entrada</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="evento">
+            <img src="assets/evento4.jpg" alt="Imagen del evento 4" class="imagen-evento" />
+            <div class="info-evento">
+                <h3 class="titulo-evento">Ciclo de Cine Documental</h3>
+                <p class="descripcion-evento">Proyecciones sobre medioambiente y sociedad.</p>
+                <p class="precio-evento">Precio: 6 €</p>
+                <div class="botones-evento">
+                    <button class="btn-favorito">Añadir a favoritos</button>
+                    <button class="btn-comprar">Comprar entrada</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="evento">
+            <img src="assets/evento5.jpg" alt="Imagen del evento 5" class="imagen-evento" />
+            <div class="info-evento">
+                <h3 class="titulo-evento">Exposición de Arte Contemporáneo</h3>
+                <p class="descripcion-evento">Instalaciones y obras de artistas locales e internacionales.</p>
+                <p class="precio-evento">Precio: 10 €</p>
+                <div class="botones-evento">
+                    <button class="btn-favorito">Añadir a favoritos</button>
+                    <button class="btn-comprar">Comprar entrada</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="evento">
+            <img src="assets/evento6.jpg" alt="Imagen del evento 6" class="imagen-evento" />
+            <div class="info-evento">
+                <h3 class="titulo-evento">Concierto de Música Clásica</h3>
+                <p class="descripcion-evento">Orquesta sinfónica interpretando piezas de Mozart y Beethoven.</p>
+                <p class="precio-evento">Precio: 20 €</p>
+                <div class="botones-evento">
+                    <button class="btn-favorito">Añadir a favoritos</button>
+                    <button class="btn-comprar">Comprar entrada</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="evento">
+            <img src="assets/evento7.jpg" alt="Imagen del evento 7" class="imagen-evento" />
+            <div class="info-evento">
+                <h3 class="titulo-evento">Feria del Libro</h3>
+                <p class="descripcion-evento">Encuentros con autores, firmas y descuentos en editoriales.</p>
+                <p class="precio-evento">Entrada libre</p>
+                <div class="botones-evento">
+                    <button class="btn-favorito">Añadir a favoritos</button>
+                    <button class="btn-comprar">Comprar entrada</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="evento">
+            <img src="assets/evento8.jpg" alt="Imagen del evento 8" class="imagen-evento" />
+            <div class="info-evento">
+                <h3 class="titulo-evento">Festival de Gastronomía Local</h3>
+                <p class="descripcion-evento">Degustaciones, showcookings y productos de la tierra.</p>
+                <p class="precio-evento">Precio: 8 €</p>
+                <div class="botones-evento">
+                    <button class="btn-favorito">Añadir a favoritos</button>
+                    <button class="btn-comprar">Comprar entrada</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

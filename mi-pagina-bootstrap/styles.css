@@ -1,0 +1,35 @@
+.titulo_reloj{
+    color:#555;
+    text-align: center;
+}
+h1 {
+    background-color: #b3bca3;
+    padding: 10px;
+    border-radius: 5px;
+    color: #555;
+}
+
+.btn-custom {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.card-text {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+.card-body {
+    background-color: rgb(197, 197, 132);
+    color:#f0f8ff
+}
+
+.btn-primary{
+    background-color: rgb(169, 169, 121);
+    border: none;
+}
+.btn-primary:hover{
+    background-color: rgb(133, 122, 107);
+}

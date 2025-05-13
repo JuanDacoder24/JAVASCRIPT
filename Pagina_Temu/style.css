@@ -1,0 +1,38 @@
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  .temu-orange {
+    background-color: #FF6A00;
+    color: white;
+  }
+  .temu-orange a {
+    color: white;
+    text-decoration: none;
+  }
+  .category-bar {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .promo-box {
+    background-color: #FF6A00;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .price-btn {
+    background-color: #FF6A00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+.bg-light img{
+    max-width: 100%;
+    height: auto;
+}
+
+    

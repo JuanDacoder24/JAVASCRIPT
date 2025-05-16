@@ -49,64 +49,184 @@
           </div>
         </div>
       </nav>
-      <div id="carouselExampleIndicators" class="carousel slide align-self-center" style="width: 50%">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
-          </button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+      <div class="container mt-4">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/biblio1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/biblio2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/biblio3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-content bg-light rounded">
+              <h1 class="display-5 fw-bold">Bienvenido a Raíces del Saber</h1>
+              <p class="lead">Descubre un mundo de conocimiento con nuestra amplia colección de libros. Desde ficción hasta teología, tenemos algo para cada lector.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-success">Explorar catálogo</button>
+                <button type="button" class="btn btn-outline-secondary">Registrarse</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/biblio1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <hr style="border: none; border-top: 2px solid #333; width: 50%; margin: 20px auto;">
+
+      <div class="container my-5">
+        <h2 class="text-center mb-4">Libros Destacados</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="img/libro1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mamá nos dijo adiós</h5>
+                <p class="card-text">Ilustración personalizada y diseño de portada para «Mamá nos dijo adiós – De Asturias a Tabasco» de la escritora mejicana Margarita Latapi...</p>
+                <a href="#" class="btn btn-success">Leer Más</a>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="img/biblio2.jpg" class="d-block w-100" alt="...">
+          
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="img/libro2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Los hombres del norte</h5>
+                <p class="card-text">¡El color es vital en las portadas de libros! Esta portada es muy creativa e inspira misterio e incluso cierto terror...</p>
+                <a href="#" class="btn btn-success">Leer Más</a>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="img/biblio3.jpg" class="d-block w-100" alt="...">
+          
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="img/libro3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Harry Potter y la piedra filosofal</h5>
+                <p class="card-text">Un conocido refrán dice: "Nunca juzgues a un libro por su portada". Sin embargo, esta es la carta de presentación de cualquier obra...</p>
+                <a href="#" class="btn btn-success">Leer Más</a>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <!-- Contenedor para las cartas en horizontal -->
-<div class="d-flex flex-wrap justify-content-center gap-3 my-4">
-    <div class="card" style="width: 18rem;">
-      <img src="img/libro1.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Mamá nos dijo adiós</h5>
-        <p class="card-text">Ilustración personalizada y diseño de portada para «Mamá nos dijo adiós – De Asturias a Tabasco» de la escritora mejicana Margarita Latapi...</p>
-        <a href="#" class="btn btn-primary">Alquilar</a>
+      <hr style="border: none; border-top: 2px solid #333; width: 50%; margin: 20px auto;">
+
+      <p class="text-center">
+        <a class="btn btn-success" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          No sé que leer
+        </a>
+      </p>
+      <hr style="border: none; border-top: 2px solid #333; width: 50%; margin: 20px auto;">
+
+      
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body text-center">
+          <p>Qué te apetece? (Fantasía, ciencia ficción, novela negra, romance, ensayo, autoayuda, histórico, etc.)</p>
+          <p>¿Quieres algo corto y ligero o largo y profundo?</p>
+          <p>¿Tienes algún autor o libro que te haya gustado recientemente?</p>
+          <p>¿Prefieres algo moderno o un clásico?</p>
+          <p>Si no tienes preferencia, aquí van algunas recomendaciones variadas para inspirarte:</p>
+          <h5>📚 Ficción variada:</h5>
+          <p>"El nombre del viento" – Patrick Rothfuss (fantasía, muy inmersivo)</p>
+          <p>"Los renglones torcidos de Dios" – Torcuato Luca de Tena (thriller psicológico español)</p>
+          <p>"1984" – George Orwell (distopía clásica que nunca pasa de moda)</p> 
+          <h5>💡 No ficción / Ensayo / Autoayuda:</h5>
+          <p>"Hábitos atómicos" – James Clear (mejora personal, fácil de leer)</p> 
+          <p>"Sapiens" – Yuval Noah Harari (historia de la humanidad, muy ameno)</p> 
+          <p>"El arte de no amargarse la vida" – Rafael Santandreu (autoayuda con enfoque psicológico)</p> 
+          <h5>🧠 Cortos pero impactantes:</h5>
+          <p>"Rebelión en la granja" – George Orwell (alegoría política muy accesible)</p> 
+          <p>"El extranjero" – Albert Camus (existencialismo en pocas páginas)</p> 
+          <p>"Ensayo sobre la ceguera" – José Saramago (distopía filosófica)</p> 
+        </div>
       </div>
-    </div>
-  
-    <div class="card" style="width: 18rem;">
-      <img src="img/libro2.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Los hombres del norte</h5>
-        <p class="card-text">¡El color es vital en las portadas de libros! Esta portada es muy creativa e inspira misterio e incluso cierto terror...</p>
-        <a href="#" class="btn btn-primary">Alquilar</a>
-      </div>
-    </div>
-  
-    <div class="card" style="width: 18rem;">
-      <img src="img/libro3.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Harry Potter y la piedra filosofal</h5>
-        <p class="card-text">Un conocido refrán dice: “Nunca juzgues a un libro por su portada”. Sin embargo, esta es la carta de presentación de cualquier obra...</p>
-        <a href="#" class="btn btn-primary">Alquilar</a>
-      </div>
-    </div>
-  </div>
-  
     
+      <div class="border p-4 rounded" style="max-width: 500px; margin: auto;" style="padding: 20%;">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail2" class="form-label">Mensaje</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+          </div>
+          <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+      </div>
+      <div class="container"> 
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"> 
+        <div class="col mb-3"> 
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none" aria-label="Bootstrap"> 
+            <svg class="bi me-2" width="40" height="32" aria-hidden="true"><use xlink:href="#bootstrap">
+
+            </use>
+          </svg> 
+        </a> 
+        <footer>
+        <p class="text-body-secondary">© 2025 - Raices del saber</p> 
+      </div> <div class="col mb-3"></div> 
+      <div class="col mb-3"> 
+        <h5>Redes Sociales</h5> 
+        <ul class="nav flex-column"> 
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a>
+            <img src="img/instagram.png" style="height: 30px;">
+          </li> 
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Twitter</a>
+            <img src="img/gorjeo.png" style="height: 30px;">
+          </li> <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Tik Tok</a>
+            <img src="img/tik-tok.png" style="height: 30px;">
+          </li> 
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a>
+            <img src="img/facebook.png" style="height: 30px;">
+          </li> 
+        </ul> 
+        <hr style="border: none; border-top: 2px solid #333; width: 50%; margin: 20px auto;">
+
+        <h5>Contacto</h5> 
+        <ul class="nav flex-column"> 
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">
+            <img src="img/llamar.png" style="height: 30px;">Telefono: 666 999 666</a>
+          </li> 
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">
+              <img src="img/correo.png" style="height: 30px;">Email: raicesdelsaber@gmail.com</a>
+          </li> <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">
+              <img src="img/whatsapp.png" style="height: 30px;">WhatsApp: 999 666 999</a>
+          </li> 
+          </li> 
+        </ul> 
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
